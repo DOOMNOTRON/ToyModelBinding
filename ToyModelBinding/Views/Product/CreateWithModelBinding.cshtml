@@ -8,9 +8,29 @@
 </h2>
 
 <form method="post">
-    <label asp-for="Title" ></label><!--If I add the * it will add the vadition message-->
+    <label asp-for="Title" ></label><!--If I add the * it will not add the vadition message-->
     <input asp-for="Title" />
     <span asp-validation-for="Title"></span>
+    <br />
+
+    <label asp-for="Description" ></label><!--If I add the * it will not add the vadition message-->
+    <input asp-for="Description" />
+    <span asp-validation-for="Description"></span>
+    <br />
+
+    <label asp-for="Series" ></label>
+    <input asp-for="Series" />
+    <span asp-validation-for="Series"></span>
+    <br />
+
+    <label asp-for="Species" ></label>
+    <input asp-for="Species" />
+    <span asp-validation-for="Species"></span>
+    <br />
+
+    <label asp-for="Accessories" ></label>
+    <input asp-for="Accessories" />
+    <span asp-validation-for="Accessories"></span>
     <br />
     
     
