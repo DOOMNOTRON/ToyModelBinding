@@ -34,5 +34,13 @@ namespace ToyModelBinding.Controllers
             return RedirectToActionPermanent("Index", "Home");
 
         }
+
+        [HttpGet]
+        public IActionResult CreateWithModelBinding()
+        {
+            return View();
+        }
+
+        
     }
 }
