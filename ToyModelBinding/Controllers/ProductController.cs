@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using ToyModelBinding.Models;
 
 namespace ToyModelBinding.Controllers
 {
@@ -14,9 +15,18 @@ namespace ToyModelBinding.Controllers
         [HttpPost]// THis action is hit after the user submits form data
         public IActionResult Create(IFormCollection formData)
         {
+
             // Validate data
 
-            
+            Toy t = new() // Must be the class to use
+            {
+                Title = formData["title"],
+
+                Price = Convert.ToDouble(formData["price"]),
+
+                Quantity = Convert.ToInt32(formData["quantity"])
+            }; 
+
 
             // Add to database
 
