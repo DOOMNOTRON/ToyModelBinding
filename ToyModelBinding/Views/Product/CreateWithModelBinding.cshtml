@@ -1,0 +1,17 @@
+﻿@model Toy
+@{
+    ViewData["Title"] = "Create a new product";
+}
+
+<h2>
+    Create Product
+</h2>
+
+<form>
+    <label asp-for="Title" ></label>
+    <input asp-for="Title" />
+    <span asp-validation-for="Title">*</span>
+    <br />
+
+
+</form>
