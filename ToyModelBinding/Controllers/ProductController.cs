@@ -41,6 +41,10 @@ namespace ToyModelBinding.Controllers
             return View();
         }
 
-        
+        [HttpPost]
+        public IActionResult CreateWithModelBinding(Toy t)
+        {
+            return View();
+        }
     }
 }
