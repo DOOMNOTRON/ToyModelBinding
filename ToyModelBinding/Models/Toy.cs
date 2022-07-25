@@ -32,14 +32,14 @@ namespace ToyModelBinding.Models
         /// <summary>
         /// The species that the toy is.
         /// </summary>
-        [Display(Name = "Species")]
         public string? Species { get; set; }
 
         /// <summary>
-        /// The Accessories that come woth the toy
+        /// The number of Accessories that come with the toy
         /// </summary>
-        [Display(Name = "Accessories")]
-        public string? Accessories { get; set; }
+        [Range(0, double.MaxValue, ErrorMessage = "Quantity must be positive")]
+        [Required(ErrorMessage = "This field is required.")]
+        public int Accessories { get; set; }
 
 
         /// <summary>
