@@ -8,43 +8,54 @@
 </h2>
 
 <form method="post">
-    <label asp-for="Title" ></label><!--If I add the * it will not add the vadition message-->
-    <input asp-for="Title" />
-    <span asp-validation-for="Title"></span>
-    <br />
-
-    <label asp-for="Description" ></label><!--If I add the * it will not add the vadition message-->
-    <input asp-for="Description" />
-    <span asp-validation-for="Description"></span>
-    <br />
-
-    <label asp-for="Series" ></label>
-    <input asp-for="Series" />
-    <span asp-validation-for="Series"></span>
-    <br />
-
-    <label asp-for="Species" ></label>
-    <input asp-for="Species" />
-    <span asp-validation-for="Species"></span>
-    <br />
-
-    <label asp-for="Accessories" ></label>
-    <input asp-for="Accessories" />
-    <span asp-validation-for="Accessories"></span>
-    <br />
+    <div class="col-md-6">
+         <div class="form-group">
+            <label asp-for="Title" ></label><!--If I add the * it will not add the vadition message-->
+            <input class="form-control" asp-for="Title" />
+            <span class="text-danger" asp-validation-for="Title"></span>
+        </div>
     
+        <div class="form-group">
+            <label asp-for="Description" ></label><!--If I add the * it will not add the vadition message-->
+            <input class="form-control" asp-for="Description" />
+            <span asp-validation-for="Description"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Series" ></label>
+            <input class="form-control" asp-for="Series" />
+            <span asp-validation-for="Series"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Species" ></label>
+            <input class="form-control" asp-for="Species" />
+            <span asp-validation-for="Species"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Accessories" ></label>
+            <input class="form-control" asp-for="Accessories" />
+            <span class="text-danger" asp-validation-for="Accessories"></span>
+        </div>
     
-    <label asp-for="Price" ></label>
-    <input asp-for="Price" />
-    <span asp-validation-for="Price"></span>
-    <br />
+        <div class="form-group">
+            <label asp-for="Price" ></label>
+            <input class="form-control" asp-for="Price" />
+            <span class="text-danger" asp-validation-for="Price"></span>
+        </div>
 
-    <label asp-for="Quantity" ></label>
-    <input asp-for="Quantity" />
-    <span asp-validation-for="Quantity"></span>
-    <br />
+        <div class="form-group">
+            <label asp-for="Quantity" ></label>
+            <input class="form-control" asp-for="Quantity" />
+            <span class="text-danger" asp-validation-for="Quantity"></span>
+        </div>
 
-    <input type="submit" value="Add Product" />
+        <div class="form-group">
+            <input class="btn btn-primary" type="submit" value="Add Product" />
+        </div>
+    </div>
+
 </form>
 
 @section Scripts

@@ -35,6 +35,9 @@ namespace ToyModelBinding.Controllers
 
         }
 
+
+
+        //Model Binding
         [HttpGet]
         public IActionResult CreateWithModelBinding()
         {
@@ -47,6 +50,7 @@ namespace ToyModelBinding.Controllers
             if (ModelState.IsValid)
             {
                 //Add to database here
+                // ProductDb.Add(t);
                 return RedirectToActionPermanent("Index", "Home");
             }
             // If the ModelState is not valid
