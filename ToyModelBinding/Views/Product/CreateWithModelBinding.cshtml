@@ -8,20 +8,21 @@
 </h2>
 
 <form method="post">
-    <label asp-for="Title" ></label>
+    <label asp-for="Title" ></label><!--If I add the * it will add the vadition message-->
     <input asp-for="Title" />
-    <span asp-validation-for="Title">*</span>
+    <span asp-validation-for="Title"></span>
     <br />
-
+    
+    
     <label asp-for="Price" ></label>
     <input asp-for="Price" />
-    <span asp-validation-for="Price">*</span>
+    <span asp-validation-for="Price"></span>
     <br />
 
     <label asp-for="Quantity" ></label>
     <input asp-for="Quantity" />
-    <span asp-validation-for="Quantity">*</span>
+    <span asp-validation-for="Quantity"></span>
     <br />
 
-    <input type="submit" value="Add Product"
+    <input type="submit" value="Add Product" />
 </form>
