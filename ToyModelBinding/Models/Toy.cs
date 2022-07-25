@@ -20,7 +20,7 @@ namespace ToyModelBinding.Models
         /// <summary>
         /// Represents the MSRP of the Toy
         /// </summary>
-        [Required(ErrorMessage = "This field is required.")]//does not show up.
+        [Required(ErrorMessage = "This field is required.")]//does not show up.Fixed neede to add the jquery script.
         [Display(Name = "MSRP")]
         [Range(0, double.MaxValue, ErrorMessage = "MSRP must be positive")]
         [DataType(DataType.Currency)]

@@ -44,7 +44,15 @@ namespace ToyModelBinding.Controllers
         [HttpPost]
         public IActionResult CreateWithModelBinding(Toy t)
         {
-            return View();
+            if (ModelState.IsValid)
+            {
+                //Add to database here
+                return RedirectToActionPermanent("Index", "Home");
+            }
+            // If the ModelState is not valid
+            // show the user the same web page
+            // with the validation errors
+            return View(t);
         }
     }
 }
